@@ -12,7 +12,7 @@
 			Nome: <input type="text" name="nome" id="nome">
 			<input type="submit" value="Inserir">
 		</form>
-		<a href="index.jsp"> Voltar </a>
+		<a href="../index.jsp"> Voltar </a>
 	</center>
 </body>
 </html>

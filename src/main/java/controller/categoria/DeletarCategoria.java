@@ -1,4 +1,4 @@
-package controller;
+package controller.categoria;
 
 import java.io.IOException;
 
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import business.CategoriaService;
 
-@WebServlet(urlPatterns = "/delete")
+@WebServlet(urlPatterns = "/categoria/delete")
 public class DeletarCategoria extends HttpServlet {
 	@EJB
     private CategoriaService service;

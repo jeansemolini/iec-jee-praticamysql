@@ -1,4 +1,4 @@
-package controller;
+package controller.categoria;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import business.CategoriaService;
 import model.Categoria;
 
-@WebServlet(urlPatterns = "/edit")
+@WebServlet(urlPatterns = "/categoria/edit")
 public class EditarCategoria extends HttpServlet {
     @EJB
     private CategoriaService service;

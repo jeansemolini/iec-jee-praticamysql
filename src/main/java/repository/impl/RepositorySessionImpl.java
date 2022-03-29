@@ -1,4 +1,8 @@
-package repository;
+package repository.impl;
+
+import repository.CategoriaRepository;
+import repository.ProdutoRepository;
+import repository.RepositorySession;
 
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
@@ -7,7 +11,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 @Stateless
-public class RepositorySessionImpl implements RepositorySession{    
+public class RepositorySessionImpl implements RepositorySession {
     @PersistenceContext
     private EntityManager em;
 
@@ -15,6 +19,11 @@ public class RepositorySessionImpl implements RepositorySession{
     @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public CategoriaRepository getCategoriaRepository(){
         return new CategoriaRepositoryImpl().setEntityManager(em);
+    }
+
+    @Override
+    public ProdutoRepository getProdutoRepository() {
+        return new ProdutoRepositoryImpl().setEntityManager(em);
     }
 
 }

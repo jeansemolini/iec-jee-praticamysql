@@ -1,4 +1,4 @@
-package controller;
+package controller.categoria;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -16,7 +16,7 @@ import model.Categoria;
 /**
  * Servlet implementation class InserirCategoria
  */
-@WebServlet("/inserir")
+@WebServlet("/categoria/inserir")
 public class InserirCategoria extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

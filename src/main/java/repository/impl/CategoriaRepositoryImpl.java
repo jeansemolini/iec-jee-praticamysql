@@ -1,10 +1,11 @@
-package repository;
+package repository.impl;
 
 import java.util.List;
 
 import javax.persistence.EntityManager;
 
 import model.Categoria;
+import repository.CategoriaRepository;
 
 public class CategoriaRepositoryImpl implements CategoriaRepository {
     private EntityManager em;
